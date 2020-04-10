@@ -1,0 +1,2 @@
+class AsyncKunError(Exception):
+    pass

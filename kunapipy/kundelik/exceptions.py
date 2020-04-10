@@ -1,0 +1,2 @@
+class KunError(Exception):
+    pass
