@@ -20,7 +20,7 @@ pip install https://github.com/Bs0Dd/KunAPIPy/archive/master.zip --upgrade
 
 ## Документация
 
-Документация доступна здесь - https://Bs0Dd.github.io/KunAPIPy/
+Документация доступна здесь - https://github.com/Bs0Dd/KunAPIPy/blob/master/docs
 
 ## Пример синхронного использования
 
