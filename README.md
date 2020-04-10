@@ -4,8 +4,7 @@
   <img alt="The Unlicense" src="https://img.shields.io/badge/license-The%20Unlicense-blue" />
 </p>
 
-<h1 align="center">  KunAPIPy </h1>
-<h1 align="center">  api.kundelik.kz wrapper </h1>
+<h1 align="center">  KunAPIPy<br>api.kundelik.kz wrapper </h1>
 <p align="center">Упрощение работы с API Казахстанского электронного дневника как с токеном, так и без него.</p>
 <p align="center">Основан на Враппере DnevnikRuAPI.</p>
 
