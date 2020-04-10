@@ -1,3 +1,4 @@
+<h1 align="center">  KunAPIPy </h1>
 <h1 align="center">  api.kundelik.kz wrapper </h1>
 <p align="center">Упрощение работы с API Казахстанского электронного дневника как с токеном, так и без него.</p>
 <p align="center">Основан на Враппере DnevnikRuAPI.</p>
