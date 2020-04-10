@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">  api.kundelik.kz wrapper </h1>
-<p align="center">Упрощение работы с api казахстанского электронного дневника как с токеном, так и без него.</p>
+<p align="center">Упрощение работы с API Казахстанского электронного дневника как с токеном, так и без него.</p>
 <p align="center">Основан на Враппере DnevnikRuAPI.</p>
 
 ## Установка
@@ -20,21 +20,21 @@ pip install https://github.com/Bs0Dd/KunAPIPy/archive/master.zip --upgrade
 
 ## Документация
 
-Документация доступна здесь - https://kesha1225.github.io/DnevnikRuAPI/
+Документация доступна здесь - https://Bs0Dd.github.io/KunAPIPy/
 
 ## Пример синхронного использования
 
 #### Получение домашнего задания на указанный период без токена.
 
 ```python3
-from pydnevnikruapi.dnevnik import dnevnik
+from kunapipy.kundelik import kundelik
 from datetime import datetime
 
 login = "login"
 password = "password"
 # Получаем доступ через логин и пароль
 
-dn = dnevnik.DiaryAPI(login=login, password=password)
+dn = kundelik.KunAPI(login=login, password=password)
 
 print(dn.get_school_homework(1000002283077, datetime(2019, 9, 5), datetime(2019, 9, 15)))
 #  Получение домашнего задания текущего пользователя для школы с id 1000002283077 в период с 05-09-2019 по 15-09-2019
@@ -48,10 +48,10 @@ print(dn.get_edu_groups())
 #### Получение домашнего задания на указанный период без токена.
 
 ```python3
-from pydnevnikruapi.aiodnevnik import dnevnik
-from pydnevnikruapi.aiodnevnik.utils import TaskManager
+from kunapipy.asynkundelik import kundelik
 import asyncio
 from datetime import datetime
+from kunapipy.asynkundelik.utils import TaskManager
 
 
 async def get_dn_info():
@@ -74,7 +74,7 @@ async def close_session():
 if __name__ == "__main__":
     login = "login"
     password = "password"
-    dn = dnevnik.AsyncDiaryAPI(login=login, password=password)
+    dn = kundelik.AsyncKunAPI(login=login, password=password)
     # Получаем доступ через логин и пароль
 
     loop = asyncio.get_event_loop()
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     # Закрываем сессию по завершению работы
 
 ```
-Чтобы пропустить шаг завершения сессии в последнем примере воспользуйтесь [примером](https://github.com/kesha1225/DnevnikRuAPI/blob/master/examples/another_async_example.py)
+Чтобы пропустить шаг завершения сессии в последнем примере воспользуйтесь [примером](https://github.com/Bs0Dd/KunAPIPy/blob/master/examples/another_async_example.py)
 
 ## Соотнесение API методов и методов kunapipy (pydnevnikruapi)
 

@@ -1,15 +1,15 @@
 ## Документация
 
-**Официальная документация на сайте** - [api.dnevnik.ru](https://api.dnevnik.ru/partners/swagger/ui/index#/)
+**Официальная документация на сайте** - [api.kundelik.kz](https://api.kundelik.kz/partners/swagger/ui/index#/)
 
-## Методы DiaryAPI
+## Методы KunAPI
 
 - **get_token** - Получить токен, используемый api
 ```python
 dn.get_token()
 ```
 
-## Методы dnevnik.ru:
+## Методы kundelik.kz:
 
 ### Authorities
 

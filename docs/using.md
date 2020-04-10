@@ -6,27 +6,27 @@
 
 **Синхронно** без токена
 ```python
-from pydnevnikruapi.dnevnik import dnevnik
+from kunapipy.kundelik import kundelik
 
 login = "login"
 password = "password"
 
-dn = dnevnik.DiaryAPI(login=login, password=password)
+dn = kundelik.KunAPI(login=login, password=password)
 ```
 
 **Синхронно** с токеном
 ```python
-from pydnevnikruapi.dnevnik import dnevnik
+from kunapipy.kundelik import kundelik
 
 token = "fuLNdxicTuDpfEC8Xc4eu57RTU67vAjJ"
 
-dn = dnevnik.DiaryAPI(token=token)
+dn = kundelik.KunAPI(token=token)
 ```
 
 **Асинхронно** без токена
 ```python3
-from pydnevnikruapi.aiodnevnik import dnevnik
-from pydnevnikruapi.aiodnevnik.utils import TaskManager
+from kunapipy.asynkundelik import kundelik
+from kunapipy.asynkundelik.utils import TaskManager
 import asyncio
 
 async def close_session():
@@ -37,7 +37,7 @@ async def close_session():
 if __name__ == "__main__":
     login = "login"
     password = "password"
-    dn = dnevnik.AsyncDiaryAPI(login=login, password=password)
+    dn = kundelik.AsyncKunAPI(login=login, password=password)
     # Получаем доступ через логин и пароль
 
     loop = asyncio.get_event_loop()
@@ -51,8 +51,8 @@ if __name__ == "__main__":
 
 **Асинхронно** с токеном
 ```python3
-from pydnevnikruapi.aiodnevnik import dnevnik
-from pydnevnikruapi.aiodnevnik.utils import TaskManager
+from kunapipy.asynkundelik import kundelik
+from kunapipy.asynkundelik.utils import TaskManager
 import asyncio
 
 
@@ -68,7 +68,7 @@ async def close_session():
 
 if __name__ == "__main__":
     token = "uqLp5xicTurpTEC8Xc4eup7R6U77bhl0"
-    dn = dnevnik.AsyncDiaryAPI(token=token)
+    dn = kundelik.AsyncKunAPI(token=token)
     # Получаем доступ через токен
 
     loop = asyncio.get_event_loop()

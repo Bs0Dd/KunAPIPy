@@ -1,11 +1,11 @@
-<h1 align="center">  api.dnevnik.ru wrapper </h1>
-<p align="center">Упрощение работы с api всероссийского электронного дневника как с токеном, так и без него.</p>
-
+<h1 align="center">  api.kundelik.kz wrapper </h1>
+<p align="center">Упрощение работы с API Казахстанского электронного дневника как с токеном, так и без него.</p>
+<p align="center">Основан на Враппере DnevnikRuAPI.</p>
 
 ## Установка
 
 ```sh
-pip install https://github.com/kesha1225/DnevnikRuAPI/archive/master.zip --upgrade
+pip install https://github.com/Bs0Dd/KunAPIPy/archive/master.zip --upgrade
 ```
 
 ## Пример синхронного использования
@@ -13,14 +13,14 @@ pip install https://github.com/kesha1225/DnevnikRuAPI/archive/master.zip --upgra
 #### Получение домашнего задания на указанный период без токена.
 
 ```python3
-from pydnevnikruapi.dnevnik import dnevnik
+from kunapipy.kundelik import kundelik
 from datetime import datetime
 
 login = "login"
 password = "password"
 # Получаем доступ через логин и пароль
 
-dn = dnevnik.DiaryAPI(login=login, password=password)
+dn = kundelik.KunAPI(login=login, password=password)
 
 print(
     dn.get_school_homework(1000002283077, datetime(2019, 9, 5), datetime(2019, 9, 15))
@@ -36,8 +36,8 @@ print(dn.get_edu_groups())
 #### Получение домашнего задания на указанный период без токена.
 
 ```python3
-from pydnevnikruapi.aiodnevnik import dnevnik
-from pydnevnikruapi.aiodnevnik.utils import TaskManager
+from kunapipy.asynkundelik import kundelik
+from kunapipy.asynkundelik.utils import TaskManager
 import asyncio
 from datetime import datetime
 
@@ -62,7 +62,7 @@ async def close_session():
 if __name__ == "__main__":
     login = "login"
     password = "password"
-    dn = dnevnik.AsyncDiaryAPI(login=login, password=password)
+    dn = kundelik.AsyncKunAPI(login=login, password=password)
     # Получаем доступ через логин и пароль
 
     loop = asyncio.get_event_loop()
