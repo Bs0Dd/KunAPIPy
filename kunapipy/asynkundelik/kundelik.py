@@ -599,7 +599,7 @@ class AsyncKunAPI(AsyncKunBase):
         end_time: str = str(datetime.datetime.now()),
     ):
         person_schedule = await self.get(
-            f"https://api.kundelik.kz/v2.0/persons/{person_id}/groups/{group_id}/schedules",
+            f"persons/{person_id}/groups/{group_id}/schedules",
             params={"startDate": start_time, "endDate": end_time},
         )
         return person_schedule

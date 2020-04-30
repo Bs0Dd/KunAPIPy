@@ -99,7 +99,9 @@ if __name__ == "__main__":
 
 /v2.0/persons/{person}/reporting-periods/{period}/avg-mark - **get_person_average_marks(person: int, period: int)** - Оценки персоны за отчетный период
 
-/v2.0/edu-groups/{group}/reporting-periods/{period}/avg-marks/{date} - **get_group_average_marks_by_date( group_id: int, period: int, date: datetime.datetime)** - Оценки учебной группы по предмету за отчетный период до определенной даты
+/v2.0/persons/{person}/groups/{group}/schedules - **get_person_schedule(person_id: int, group_id: int, start_time: datetime.datetime, end_time: datetime.datetime)** - Расписание ученика
+
+/v2.0/edu-groups/{group}/reporting-periods/{period}/avg-marks/{date} - **get_group_average_marks_by_date(group_id: int, period: int, date: datetime.datetime)** - Оценки учебной группы по предмету за отчетный период до определенной даты
 
 /v2.0/edu-groups/{group}/avg-marks/{from}/{to} - **get_group_average_marks_by_time(group_id: int, start_time: datetime.datetime, end_time: datetime.datetime)** - Оценки учебной группы за период
 
@@ -284,8 +286,6 @@ TODO: доделать методы
 /v2.0/edu-groups/{eduGroup}/reporting-periods - **func** - Список отчётных периодов для класса или учебной группы
 
 /v2.0/edu-groups/{eduGroup}/reporting-period-group - **func** - Группа отчетных периодов для класса или учебной группы
-
-/v2.0/persons/{person}/groups/{group}/schedules - **func** - Расписание ученика
 
 /v2.0/school-rating/from/{from}/to/{to} - **func** - ѕолучение списка школ с наивысшим рейтингом за выбранный период
 
