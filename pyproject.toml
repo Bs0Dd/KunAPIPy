@@ -7,7 +7,7 @@ authors = ["kesha1225 <samedov03@mail.ru> & Bs()Dd <vzadorozhkin@mail.ru>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-aiohttp = "^3.6.2"
+aiohttp = "^3.7.4"
 requests = "^2.22.0"
 
 [tool.poetry.dev-dependencies]
