@@ -6,7 +6,7 @@
 
 <h1 align="center">  KunAPIPy<br>api.kundelik.kz wrapper </h1>
 <p align="center">Упрощение работы с API Казахстанского электронного дневника как с токеном, так и без него.</p>
-<p align="center">Основан на Враппере DnevnikRuAPI.</p>
+<p align="center">Основан на Враппере <a href="https://github.com/kesha1225/DnevnikRuAPI">DnevnikRuAPI</a>.</p>
 
 ## Установка
 
@@ -21,6 +21,7 @@ pip install https://github.com/Bs0Dd/KunAPIPy/archive/master.zip --upgrade
 ## Документация
 
 Документация доступна здесь - https://github.com/Bs0Dd/KunAPIPy/blob/master/docs
+По методам здесь - https://api.kundelik.kz/partners/swagger/ui/index
 
 ## Пример синхронного использования
 

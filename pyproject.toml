@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "KunAPIPy"
 version = "0.1.0"
-description = ""
-authors = ["kesha1225 <samedov03@mail.ru> & Bs()Dd <wladeus@drittereich.de>"]
+description = "API wrapper for Kundelik.kz"
+readme = "README.md"
+authors = ["kesha1225 <samedov03@mail.ru> & Bs()Dd <vzadorozhkin@mail.ru>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
