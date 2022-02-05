@@ -1,4 +1,4 @@
-site_name: KunAPIPy WebSite
+site_name: KunAPIPy
 nav:
     - Начало: index.md
     - Использование: using.md

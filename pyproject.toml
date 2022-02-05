@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "KunAPIPy"
+name = "kunapipy"
 version = "0.1.0"
-description = "API wrapper for Kundelik.kz"
+description = "Simple wrapper for kundelik.kz API, based on pydnevnikruapi"
 readme = "README.md"
 authors = ["kesha1225 <samedov03@mail.ru> & Bs()Dd <vzadorozhkin@mail.ru>"]
 

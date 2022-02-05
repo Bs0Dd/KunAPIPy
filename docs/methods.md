@@ -27,33 +27,33 @@ dn.get_organization_info()
 
 - **get_person_average_marks** - Оценки персоны за отчетный период
 ```python
-dn.get_person_average_marks(person_id=1000002385955, period=1000002385971)
+dn.get_person_average_marks(person_id=1000002385955, period_id=1000002385971)
 ```
 |Параметр|Описание|
 |-|-|
 |person_id|ID выбранной персоны|
-|period|Период для получения оценок в unixtime|
+|period_id|ID отчетного периода|
 
 - **get_person_average_marks_by_subject** - Оценка персоны по предмету за отчетный период
 ```python
-dn.get_person_average_marks_by_subjects(person_id=1000002385955, period=1000002385971, subject_id=683725334)
+dn.get_person_average_marks_by_subjects(person_id=1000002385955, period_id=1000002385971, subject_id=683725334)
 ```
 |Параметр|Описание|
 |-|-|
 |person_id|ID выбранной персоны|
-|period|Период для получения оценок в unixtime|
+|period_id|ID отчетного периода|
 |subject_id|ID выбранного предмета|
 
 - **get_group_average_marks_by_date** - Оценки учебной группы по предмету за отчетный период до определенной даты
 ```python
 import datetime
 
-dn.get_group_average_marks_by_date(group_id=14455222, period=1000002385971, date=datetime.datetime(2019, 11, 8))
+dn.get_group_average_marks_by_date(group_id=14455222, period_id=1000002385971, date=datetime.datetime(2019, 11, 8))
 ```
 |Параметр|Описание|
 |-|-|
 |group_id|ID выбранной учебной группы|
-|period|Период для получения оценок в unixtime|
+|period_id|ID отчетного периода|
 |date|Конечная дата|
 
 - **get_group_average_marks_by_time** - Оценки учебной группы за период

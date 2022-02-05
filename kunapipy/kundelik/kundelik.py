@@ -481,26 +481,26 @@ class KunAPI(KunBase):
         marks_values = self.get(f"marks/values/type/{marks_type}")
         return marks_values
 
-    def get_person_average_marks(self, person: int, period: int):
-        marks = self.get(f"persons/{person}/reporting-periods/{period}/avg-mark")
+    def get_person_average_marks(self, person_id: int, period_id: int):
+        marks = self.get(f"persons/{person_id}/reporting-periods/{period_id}/avg-mark")
         return marks
 
     def get_person_average_marks_by_subject(
-        self, person_id: int, period: int, subject_id: int
+        self, person_id: int, period_id: int, subject_id: int
     ):
         marks = self.get(
-            f"persons/{person_id}/reporting-periods/{period}/subjects/{subject_id}/avg-mark"
+            f"persons/{person_id}/reporting-periods/{period_id}/subjects/{subject_id}/avg-mark"
         )
         return marks
 
     def get_group_average_marks_by_date(
         self,
         group_id: int,
-        period: int,
+        period_id: int,
         date: datetime.datetime = datetime.datetime.now(),
     ):
         marks = self.get(
-            f"edu-groups/{group_id}/reporting-periods/{period}/avg-marks/{date}"
+            f"edu-groups/{group_id}/reporting-periods/{period_id}/avg-marks/{date}"
         )
         return marks
 
