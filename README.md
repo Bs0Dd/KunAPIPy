@@ -20,7 +20,7 @@ pip install https://github.com/Bs0Dd/KunAPIPy/archive/master.zip --upgrade
 
 ## Документация
 
-Документация доступна здесь - https://github.com/Bs0Dd/KunAPIPy/blob/master/docs
+Документация доступна здесь - https://github.com/Bs0Dd/KunAPIPy/blob/master/docs  
 По методам здесь - https://api.kundelik.kz/partners/swagger/ui/index
 
 ## Пример синхронного использования
